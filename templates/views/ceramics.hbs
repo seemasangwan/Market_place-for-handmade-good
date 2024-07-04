@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Ceramics</title>
+     <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    {{>navbar}}
+    {{>search}}
+    <header class="jewelry-hero">
+        <div class="jewelry-hero-content">
+            <h1>Artisan Ceramics</h1>
+            <p>Explore our collection of unique handmade Artisan Ceramics.</p>
+            <a href="/category" class="btn btn-primary">Back to Categories</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2 class="jewelry-section-title">Artisan Ceramics</h2>
+            <div class="product-grid">
+                 {{#if products.length}}
+                      {{#each products}}
+                            <div class="product-card">
+                            <img src="{{this.imageUrl}}" alt="{{this.title}}">
+                            <h3>{{capitalizeFirstLetter this.title}}</h3>
+                            <p>{{this.description}}</p>
+                            <p>Category: {{this.category}}</p>
+                            <p>Price: ${{this.price}}</p>
+                          </div>  
+                          {{/each}}  
+             
+             {{else}}
+                        <p class="no-results">No products found in this category.</p>
+            {{/if}}
+            </div>
+            
+        </section>
+    </main>
+    {{>footer}}
+</body>
+</html>

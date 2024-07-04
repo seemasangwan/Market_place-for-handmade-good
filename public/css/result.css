@@ -1,0 +1,46 @@
+
+    .container {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+    }
+
+    .product-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .searchresultproduct {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .searchresultproduct h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .searchresultproduct p {
+        margin-bottom: 10px;
+    }
+
+    .searchresultproduct img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .no-products {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+

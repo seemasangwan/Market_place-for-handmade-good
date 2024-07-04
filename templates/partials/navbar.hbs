@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+</head>
+<body>
+    <nav class="custom-navbar">
+        <ul class="custom-navbar-list">
+            <li class="custom-navbar-item"><a href="/" class="custom-navbar-link">Home</a></li>
+            <li class="custom-navbar-item"><a href="/about" class="custom-navbar-link">About</a></li>
+            <li class="custom-navbar-item"><a href="/contact" class="custom-navbar-link">Contact</a></li>
+            <li class="custom-navbar-item"><a href="/signup" class="custom-navbar-link">Sign Up</a></li>
+            <li class="custom-navbar-item"><a href="/login" class="custom-navbar-link">Login</a></li>
+            <li class="custom-navbar-item"><a href="/buyitem" class="custom-navbar-link">Buy Item</a></li>
+            <li class="custom-navbar-item"><a href="/category" class="custom-navbar-link">Categories</a></li>
+            <li class="custom-navbar-item"><a href="/sellitem" class="custom-navbar-link">Sell Item</a></li>
+        </ul>
+        <button class="custom-navbar-toggle" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+    </nav>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.querySelector('.custom-navbar-toggle');
+    const navbarList = document.querySelector('.custom-navbar-list');
+
+    toggleButton.addEventListener('click', function() {
+        navbarList.classList.toggle('show');
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    {{> navbar}}
+
+    <div class="signup-container">
+        <form action="/signup" method="POST" class="signup-form">
+            <h1 class="signup-title">Sign Up</h1>
+            <input type="text" class="signup-input" placeholder="Enter Username" name="username" autocomplete="off" required>
+            <input type="email" class="signup-input" placeholder="Enter Email" name="email" autocomplete="off" required>
+            <input type="password" class="signup-input" placeholder="Create Password" name="password" autocomplete="off" required>
+            <input type="password" class="signup-input" placeholder="Confirm Password" name="confirmpassword" autocomplete="off" required>
+            <select name="role" class="signup-select" required>
+                <option value="Buyer">Buyer</option>
+                <option value="Seller">Seller</option>
+            </select>
+            <input type="submit" class="signup-btn" value="Sign Up">
+        </form>
+    </div>
+
+    {{> footer}}
+</body>
+</html>

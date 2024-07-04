@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    {{>navbar}}
+    {{>search}}
+    <main class="search-results-container">
+        <h1>Search Results</h1>
+        {{#if products.length}}
+            <ul class="search-results-list">
+                {{#each products}}
+                    <li class="search-result-item">
+                        
+                        <h2>{{capitalizeFirstLetter this.title}}</h2>
+                        <p>{{this.description}}</p>
+                        <p>Category: {{this.category}}</p>
+                        <p>Price: ${{this.price}}</p>
+                         <img src="{{this.imageUrl}}" alt="{{this.title}}">
+                       
+                    </li>
+                {{/each}}
+            </ul>
+        {{else}}
+            <p class="no-results">No products found matching your search criteria.</p>
+        {{/if}}
+    </main>
+    {{>footer}}
+</body>
+</html>
