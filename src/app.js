@@ -44,8 +44,7 @@ app.use(cookieParser());// bata rhe h app ko ki ye use kr rhe h
 
 
 //environment variables
-console.log(process.env.SECRET_DB_NAME)
-console.log(process.env.SECRET_KEY)
+
 
 
 app.get('/',(req,res)=>
