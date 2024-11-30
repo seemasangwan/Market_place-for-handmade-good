@@ -51,7 +51,9 @@ app.get('/',(req,res)=>
 {
     res.render("hero");
 });
-
+app.get('/dummy',(req,res)=>{
+    res.render('dummy');
+});
 
 app.get('/category',(req,res)=>{
     res.render('categories');
