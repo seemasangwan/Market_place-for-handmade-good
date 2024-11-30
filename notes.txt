@@ -1,0 +1,219 @@
+Node.js is a javascript running on the server
+Node.js is a javascript runtime built of Chromes V8 javascript engine
+Can run javascript on server without browser
+V8 engine---->js engine convert code into machine code
+Google chrome ka engine V8 to run js on browser
+
+Node.js---->[c++ embedded with V8 engine ]
+Node.js is a js runtime environment 
+
+when to use Node js
+I/O bound
+Data Streaming Application (data aata jata hai jaise reels)
+Real time chat Application ( whatsapp )
+single threadin and non blocking
+
+
+RUN COMMAND node -v to check version
+NPM ---> node package manager install automatically with node
+npm -v
+
+
+Go to folder where your file exist
+node index.js(file name) 
+
+
+REPL
+
+create new file with help of terminal
+type nul > filename.extension
+
+1. Js Expression  (5+6=11) in ternimal
+2. use variable    in terminal
+3. mutliline code loops in terminal
+
+
+paramter--> when define or declare function
+argument---> when call function
+
+Node js has a set of built in module  which can be used without any further 
+installation
+
+Asynch---->does not excute in seuqence if one take more time
+excute next line
+
+OS module
+
+Path module
+
+How import and export own module
+what is npm --->
+node package manager 
+how to install --> go to root folder
+run---> npm init 
+enter details
+then package.json file we appear
+
+
+// validator install ---> it is module which 
+use for string to check its validity
+// search on google npm package-->validator
+// install this as a dependcy in your project
+// npm install validator
+// ES6=import validator from 'validator';
+// there are different property of validator
+// one is to check for email--> isemail
+ // isupper,islower and manymore
+
+
+ // how to import global npm module
+ // node me save krne se apne aap run ho jaaye
+ // taaki baar baar run na krna pade
+ // uske liye hum nodemon use krenge
+ // it is automatically rerun kr dega jab koi change hoga
+ //npm install nodemon -g
+ // check for nodemon -v  ---> show if install properly
+ //nodemon first.js
+
+  module wrapper function
+  (functino(){
+    anything inside this are private 
+    it is iffi
+  })-----> node apne app wrapp k deta hai like this 
+  // hume krne ki requirement ni hai 
+  // it is just for explain
+
+  // module wrapper 
+   function(exports,require,_dirname,_filename){
+    ye sntax hota hai kuch
+
+
+
+   }
+
+   web server --->
+   web application of access
+   http request ko handle krne ke liye use krte
+
+
+// require http module
+Informational responses (100 – 199)
+Successful responses (200 – 299)
+Redirection messages (300 – 399)
+Client error responses (400 – 499)
+Server error responses (500 – 599)
+
+
+// all about json
+javascript object notation
+light weight format for
+storing and transport data
+json is often used when data is sent from a server to a web package
+
+when we want to convert obejct into json
+syntax const json data=JSON.stringify(data)
+
+oject--> key:value  value(inside "" )
+json --> key :value  both are in ""
+
+// json to object
+const newdata=JSON.parse(jsondata);
+
+
+steps
+1. convert data to json
+2. data to other file
+3. readfile
+4. convert json to obect
+
+// how to create API in nodejs
+make json file
+make a request like '/api'
+ when this request is made
+ readthat file and convert the data into object formatand 
+ access data using property of obejct accoridng torequirement
+ . call api at the top so that not fetch again and again
+
+
+ // EVENT module
+ node js has inbuilt module called "Events"
+ // can crate ,firse and listen user own Events
+
+ /***********STREAMING IN NODE JS********************** */
+/**   streams are object 
+ *    that let you read data and write  to a destination
+ * in continuous fashion
+ * 
+ * streaming ---> listening musicor watch video in
+ * real time without downloading
+ */
+
+/** read file using fs.readstream ( filename, callback) 
+ * there are some event  data,end
+*/
+/** stream pipe 
+ * get stream data usig createreadstream in fs
+ * data.pipe(where want to write)   where to want write=res(destination)
+ */
+
+
+/*
+
+
+/* EXPRESS JS TUTORIAL  */
+
+express.js is a nodejs framework
+it is most popular framework
+it is a web application framework
+which provide you with a simple api to build 
+website, web application and back ends
+
+// why need of express js and how it is usefull to nodejs
+take less time and less lines of code 
+did with express js than nodejs
+
+
+// next.js is also a another framework
+npm install express
+// 
+// routing ka matlab ki website me multiple pages hai
+//un pages ko kaise visit kr rhe hai usee roting khlte hai
+
+// how to send json data as response 
+just pass object as res in send 
+it automatically convert object in 
+
+// express.static is built-in middleware function in express
+// use app.use(express.static(foldernameofstaticwebsit))
+
+// how to get dynamic content
+// we need templet engine 
+// there are diffrent handlebars
+// ejs,pug,handlebars
+// express js me dynamic ke liye handlebars use krenge
+
+npm install hbs
+// create new folder name view
+// inside view make file index.hbs
+// to set view engine
+app.set('view engine,'hbs')
+// parials---->like component
+same code ko reuse 
+
+
+
+// mongodb
+
+sql                   no sql
+my sql                 mongodb
+work on RDBMS        it is non RDBMS , document oriented
+                     work on document 
+it store data in 
+form of entity as table   data store in form of document
+it uses sql to query db     mongodb use bson to query db
+                               bson --> ninary json
+                               binary representation to store data
+                               use for storage
+                               enconding
+                               faster
+                               
